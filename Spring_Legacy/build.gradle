@@ -57,8 +57,8 @@ dependencies {
 
   // 테스트
   testImplementation "org.springframework:spring-test:${springVersion}"
-  testCompileOnly"org.projectlombok:lombok:${lombokVersion}"
-  testAnnotationProcessor "org.projectlombok:${lombokVersion}"
+  testImplementation "org.projectlombok:lombok:${lombokVersion}"
+  testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
@@ -68,4 +68,3 @@ dependencies {
 test {
   useJUnitPlatform()
 }
-
